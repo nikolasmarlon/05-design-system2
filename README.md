@@ -27,10 +27,12 @@ O projeto será dividido em vários pacotes (packages)
 
     depois rodar 
     --- npx tsc --init, para criar o arquivo de tsconfig.json
+    
 
 
     para converter o código typeScript para javaScript, basta rodar o no terminal ...
     --- npx tsc
+
 
 
 

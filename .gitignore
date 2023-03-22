@@ -1,4 +1,6 @@
 node_modules
+dist
+.turbo
 scripts/flow/*/.flowconfig
 .flowconfig
 *~

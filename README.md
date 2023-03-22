@@ -1,14 +1,14 @@
 # 05-design-system2
  
-- [] Text
-- [] Heading
-- [] Box
-- [] Button
-- [] TextInput
-- [] TextArea
-- [] CheckBox
-- [] Avatar
-- [] MultStep
+- [ ] Text
+- [ ] Heading
+- [ ] Box
+- [ ] Button
+- [ ] TextInput
+- [ ] TextArea
+- [ ] CheckBox
+- [ ] Avatar
+- [ ] MultStep
 
 O projeto será dividido em vários pacotes (packages)
  criar a pasta packages e dentro a pasta tokens

@@ -49,3 +49,32 @@ O projeto será dividido em vários pacotes (packages)
     Vamos dentro do pacote e rodamos --- npm run build //oque vai gerar uma pasta dist dentro do pacote
 
     Já o script de dev fica monitorando as alterações 
+
+
+## Monorepo
+    É um conceito introduzido principalmento dentro do javaScript, que é a prática de colocar vários projetos dentro de um único repositório, não necessariamente significa um repositório do github, seria um espaço de tabalho com vários projetos dentro. estes projetos são dependentes entre si. 
+
+
+# Criação do pacote react
+    acessa o pacote e dar um --- npm init -y
+    instalar o typeScript como dependência de dev. --- npm i typescript -D
+    também instalar o tsUp  --- npm i tsup -D   //Para fazer o processo de build
+
+    vamos em package.json do pacote react e trocar o nome do projeto
+
+    criar uma pasta src e dentro um arquivo index.ts
+
+### Para mostrar o processo de importação entre os pacotes 
+    vamos na pasta root(design-system2) a pasta principal do projeto e dar um --- npm init -y //com isso teremos um package.json global independente dos pacotes entro do projeto
+    Obs. o package.json global nao importa muito, pois ele nao será publicado no npm, vamos remover praticamente tudo e deixar somente os scripts dento do arquivo package.json global
+    e fazer algumas configurações neste arquivo 
+    ## a primeiria é "private": true //que diz que o pacote nao vai ser publicado
+    ## depois adicionar "workspaces":[
+    "packages/*"
+    ], //Uma array mostrando onde estão os pacotes, informando a pasta onde estão e o /* é para falar que todas as pastas dentro da pasta packages são os repositórios do monorepo
+
+    Depois vou deletar a pasta node_modules dentro de tokens e dento da pasta react.
+
+    e dentro do pacote react vou falar que este pacote tem uma dependência de dev que é o outro pacote  "@nikolas-ui/tokens": "*",
+
+    depoias vou na pasta principal do design-system2 e dou um --- npm i //o que vai criar um arquivo package-lock.json ... agora todas as dependências são gerenciadas de uma forma global e também temos uma única pasta node_modules 

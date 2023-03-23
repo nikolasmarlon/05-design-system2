@@ -34,5 +34,13 @@ O projeto será dividido em vários pacotes (packages)
     --- npx tsc
 
 
+--- Build do pacote com TSUP
+# TSUP 
+    -- é uma ferramenta que ajuda no processo de conversão do código num arquivo javascript que vai ser carregado por outras aplicações 
+    
+
+    instalar tsup como dependência de desenvolvimento dentro de tokens
+
+    --- npm i tsup -D
 
 

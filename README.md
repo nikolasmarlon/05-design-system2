@@ -78,3 +78,9 @@ O projeto será dividido em vários pacotes (packages)
     e dentro do pacote react vou falar que este pacote tem uma dependência de dev que é o outro pacote  "@nikolas-ui/tokens": "*",
 
     depoias vou na pasta principal do design-system2 e dou um --- npm i //o que vai criar um arquivo package-lock.json ... agora todas as dependências são gerenciadas de uma forma global e também temos uma única pasta node_modules 
+
+    Para fazer uma importação de dentro do pacote tokens para o pacote react, precisamos no package.json dentro de tokens falar qual o script principal(main), mudar o main para  "main": "dist/index.js", além disto passar uma opção module informando o arquivo principal quando você usa EcmaScriptModules vamos adicionar "module": "./dist/index.mjs",
+
+    e também adicionar "types": "./dist/index.d.ts", que vai ser usada pelo typescript para falar quais são as tipagens, que é o arquivo de definição de tipos
+
+    por fim, fazer o mesmo processo no pacote do react

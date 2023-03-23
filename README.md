@@ -84,3 +84,24 @@ O projeto será dividido em vários pacotes (packages)
     e também adicionar "types": "./dist/index.d.ts", que vai ser usada pelo typescript para falar quais são as tipagens, que é o arquivo de definição de tipos
 
     por fim, fazer o mesmo processo no pacote do react
+
+# Configuração do TypeScript
+## Pacote ts-config
+Vamos criar um pacote dento de packages chamado ts-config
+dentro dela dar um --- npm init -y 
+Não vamos precisar instalar nada dentro
+Vamos mudar o nome dentro de package.json
+O arquivo vai ficar assim 
+{
+  "name": "@nikolas-ui/ts-config",
+  "version": "1.0.0",  
+  "license": "MIT",
+  "private": "true"
+}
+esse arquivo vai ser private true, pq nao quero publicar no NPM 
+
+vamos criar dois arquivos de configuração do typescript, um chamado base.json e outro chamado react.json.
+
+
+depois temos referenciar este pacote dentro dos outros pacotes em dev dependencies adiciona
+"@nikolas-ui/ts-config": "*",

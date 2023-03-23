@@ -42,5 +42,10 @@ O projeto será dividido em vários pacotes (packages)
     instalar tsup como dependência de desenvolvimento dentro de tokens
 
     --- npm i tsup -D
+    Depois de instalar vamos criar dois scripts dentro de package.json
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"   Monitorar os arquivos durante o desenvolvimento 
 
+    Vamos dentro do pacote e rodamos --- npm run build //oque vai gerar uma pasta dist dentro do pacote
 
+    Já o script de dev fica monitorando as alterações 

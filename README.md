@@ -105,3 +105,35 @@ vamos criar dois arquivos de configuração do typescript, um chamado base.json 
 
 depois temos referenciar este pacote dentro dos outros pacotes em dev dependencies adiciona
 "@nikolas-ui/ts-config": "*",
+
+
+# EsLint-config
+
+Vamos criar uma configuração para todos os pacotes do eslint
+Acessar a pasta e dar um --- npm init -y que vai criar o package.json e dentro desse arquivo vamos mudar alguams informações
+e retirar algumas coisas
+adicionar nome do projeto "name": "@nikolas-ui/eslint-config",
+
+arquivo vai ficar assim?
+{
+  "name": "@nikolas-ui/eslint-config",
+  "license": "MIT",
+  "private": "true",
+  "main": "index.js"
+}
+
+esse arquivo vai ter o main sendo o index.js
+
+E dentro do pacote vamos instalar duas dependências de dev.
+--- npm i -D eslint @rocketseat/eslint-config  //Precisei rodar o comando duas vezes, pois a primeira nao instalou as dependências
+
+Dentro do index.js temos que configurar o eslint
+
+depois adicionar as dependências nos package.json do pacote react e tokens     "@nikolas-ui/eslint-config": "*",
+
+Depois criar o arquivo de configuração do eslint dentro de react e dentro de tokens .eslint.json
+
+depois criar um script dentro de tokens e react dentro de package.json dos dois pacotes
+
+
+

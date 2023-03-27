@@ -135,5 +135,19 @@ Depois criar o arquivo de configuração do eslint dentro de react e dentro de t
 
 depois criar um script dentro de tokens e react dentro de package.json dos dois pacotes
 
+## Fazendo o pacote react 
+para começar vamos instalar como dependência de Dev --- npm i -D react @types/react @types/react-dom
+O react instalado como dependência somente de desenvilvimento é pq quem usar nosso pacote tem que estar com o react instalado em seu projeto, e também para nao duplicar a instalação do react no projeto do usuário
 
 
+temos também que adicionar em package.json, no script build e no script dev, -- external react, ficando assim 
+"build": "tsup src/index.ts --format esm,cjs --dts --external react",
+"dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+
+Isso avisa para o tsup que vamos importar o react de uma aplicação externa
+
+
+para implementar o componente, vamos mudar o nome do arquivo index.ts dentro do pacote react para index.tsx
+
+
+### Vamos fazer uma configuração base de estilização 

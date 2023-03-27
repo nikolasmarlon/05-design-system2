@@ -150,4 +150,10 @@ Isso avisa para o tsup que vamos importar o react de uma aplicação externa
 para implementar o componente, vamos mudar o nome do arquivo index.ts dentro do pacote react para index.tsx
 
 
-### Vamos fazer uma configuração base de estilização 
+## Vamos fazer uma configuração base de estilização 
+# Configurando Stitches
+
+vamos instalar dentro do pacote react --- npm i @stitches/react como dependência de Produção, a aplicação hospedeira nao precisa ter o stitches instalado.
+
+vamos criar uma pasta dentro de src do pacote react chamada styles e dentro dela um arquivo chamado index.ts, onde vai ficar a configuração do stitches 
+vamos importar dentro dele a função createStitches e passar várias opções

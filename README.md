@@ -164,3 +164,6 @@ vamos importar dentro dele a função createStitches e passar várias opções
 vamos criar uma pasta separada do react, dentro de packages, vamos criar uma pasta docs e entro dela instalar o storybook
 com o comando -- npx sb init --builder @storybook/builder-vite --type react --use-npm .
 Vamos instalar mais alumas dependências dentro de docs -- npm i vite @vitejs/plugin-react -D
+
+## os comandos estão dando erro
+Error: error:0308010C:digital envelope routines::unsupported

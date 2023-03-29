@@ -167,3 +167,6 @@ Vamos instalar mais alumas dependências dentro de docs -- npm i vite @vitejs/pl
 
 ## os comandos estão dando erro
 Error: error:0308010C:digital envelope routines::unsupported
+
+
+rodei o comando -- npm audit fix --force para ver se o erro vai continuar 

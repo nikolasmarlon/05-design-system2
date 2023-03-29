@@ -170,3 +170,18 @@ Error: error:0308010C:digital envelope routines::unsupported
 
 
 rodei o comando -- npm audit fix --force para ver se o erro vai continuar 
+
+tambem nao resolvel 
+
+Tentei resolver problema inserindo (logo abaixo da mensagem de erro) o comando:
+
+ $env:NODE_OPTIONS = "--openssl-legacy-provider"
+
+ depois tentei rodar --- set NODE_OPTIONS=--openssl-legacy-provider, o que resolveu computar o condigo, porém, ainda deu erro
+
+ ERROR in ./stories/Introduction.stories.mdx
+Module not found: Error: Can't resolve '@storybook/addon-docs' in 'C:\Users\User\Desktop\Projetos\05-design-system2\packages\docs\stories'
+ @ ./stories/Introduction.stories.mdx 15:0-63 16:0-45 33:10-14 136:15-25
+
+
+ 

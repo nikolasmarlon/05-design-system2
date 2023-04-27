@@ -174,3 +174,7 @@ porém apareceu outro erro
 
 O erro foi resolvido instalando as dependências atualizadas, apagando as pasta node_modules, apagando os arquivos do storybook e rodando novamente o comando para instalar as dependências
 
+
+# Componentes do design system
+
+todos os componentes serão criados dentro da pasta react/src/components e documentados dentro de docs/src/stories , e será sempre em conjunto ( o componente e a documentação no storybook)

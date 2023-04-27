@@ -1,3 +1,6 @@
+# Erros
+aplicação só funciona com node 16
+
 # 05-design-system2
  
 - [ ] Text
@@ -169,5 +172,5 @@ Vamos instalar mais alumas dependências dentro de docs -- npm i vite @vitejs/pl
  # Erro resolvido fazendo downgrade do node para a versão 16.x
 porém apareceu outro erro 
 
-O erro foi resolvido instalando as dependências atualizadas, apagando as paste node_modules, apagando os arquivos do storybook e rodando novamente o comando para instalar as dependências
+O erro foi resolvido instalando as dependências atualizadas, apagando as pasta node_modules, apagando os arquivos do storybook e rodando novamente o comando para instalar as dependências
 

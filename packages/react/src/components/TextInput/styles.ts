@@ -20,9 +20,32 @@ export const TextInputContainer = styled('div', {
         cursor: 'not-allowed',
     },
 })
+
 export const Prefix = styled('span', {
-    
+    fontFamily: '$default',
+    fontSize: '$sm',
+    color: '$gray400',
+    fontWeight: '$regular',
 })
+
 export const Input = styled('input', {
-    
+    fontFamily: '$default',
+    fontSize: '$sm',
+    color: '$white',
+    fontWeight: '$regular',
+    background: 'transparent',
+    border: 0,
+    width: '100%',
+
+    '&:focus': {
+        outline: 0,
+    },
+
+    '&:disabled': {
+        cursor: 'not-allowed',
+    },
+
+    '&:placeholder': {
+        color: '$gray400',
+    },
 })

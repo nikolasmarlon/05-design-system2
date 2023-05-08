@@ -9,6 +9,13 @@ export default {
     args: {
        src: 'https://github.com/nikolasmarlon.png',
        alt: 'Nikolas Marlon',
+    },
+    argTypes: {
+        src:{
+            control:{
+                type: 'text',
+            }
+        }
     }
 
 }as Meta<AvatarProps>

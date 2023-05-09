@@ -1,6 +1,6 @@
 {
-  "name": "@nikolas-ui/react",
-  "version": "1.0.0",
+  "name": "@nikolasui/react",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

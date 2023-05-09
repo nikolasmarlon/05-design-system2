@@ -1,6 +1,6 @@
 {
-  "name": "@nikolas-ui/tokens",
-  "version": "1.0.0",
+  "name": "@nikolasui/tokens",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

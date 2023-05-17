@@ -1,0 +1,2 @@
+import{A as t}from"./index-6c46bfe0.js";import"./index-3395707a.js";import"./iframe-b9b76156.js";import"./index-31c2f232.js";import"./jsx-runtime-7f143cf2.js";const l={title:"Data display/Avatar",component:t,args:{src:"https://github.com/nikolasmarlon.png",alt:"Nikolas Marlon"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,c as WithFallback,m as __namedExportsOrder,l as default};
+//# sourceMappingURL=Avatar.stories-caefc9de.js.map
